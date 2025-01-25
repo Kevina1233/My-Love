@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            animation: fadeIn 5s ease-in-out;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #ff758c;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff758c;
+            color: white;
+        }
+        .heart {
+            position: absolute;
+            width: 100px;
+            height: 90px;
+            background: #ff758c;
+            margin: -45px 0 0 -50px;
+            transform: rotate(-45deg);
+            animation: float 4s infinite;
+            z-index: 1; /* Places the heart behind the text */
+            opacity: 0.3; /* Makes the heart more subtle */
+        }
+        .heart::before, .heart::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #ff758c;
+        }
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(-45deg); }
+            50% { transform: translateY(-10px) rotate(-45deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <h1>You're the Reason I Smile ❤️</h1>
+    <p>Every moment with you feels like magic, and my heart is full of love just for you.</p>
+    <a href="file:///C:/Users/Suganthi/Downloads/Html/.vscode/Love%202.html">
+    <button onclick="alert">Click Me</button>
+</body>
+</html>
